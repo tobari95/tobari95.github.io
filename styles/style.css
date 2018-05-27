@@ -1,0 +1,33 @@
+html {
+  font-size: 16px;
+  font-family: 'Sunflower', sans-serif;
+  background: #A6E8FB;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  /* text-shadow: 3px 3px 0.1px blue; */
+}
+
+p, li {
+  font-size: 20px
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+
+img {
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+}
