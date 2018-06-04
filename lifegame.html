@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>tobari's page | lifegame</title>
+</head>
+<body>
+  <h1>ライフゲーム</h1>
+  <p>下のスタートボタンを押すとライフゲームのシミュレーションが始まります。</p>
+  <div id="app">
+    <div id="generation">{{ generation }}</div>
+    <div id="screen-container">
+      <svg id="screen" viewbox="0 0 600 600" width="600"
+           style="background-color: gray;">
+        <g v-for="i in row">
+          <g v-for="j in col">
+            <rect :x="(i - 1) * 10" :y="(j - 1) * 10"
+                   width="10" height="9" stroke="gray" stroke-width="0.5"
+                  :fill="getCellColor(i-1,j-1)"></rect>
+        </g>
+      </svg>
+    </div>
+
+    <button v-on:click="playStart">スタート</button>
+  </div>
+
+  <ul>
+    <li><a href="index.html">ホーム</a></li>
+  </ul>
+
+  <!-- Vue.js -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+
+  <!-- my scripts -->
+  <script src="scripts/util.js"></script>
+  <script src="scripts/lifegame.js"></script>
+</body>
+</html>
