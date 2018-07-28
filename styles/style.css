@@ -50,10 +50,12 @@ header {
 }
 
 .header-nav {
-  float: left;
+  display: inline-block;
   font-size: 20px;
+  height: 50px;
   padding: 15px;
   color: #fff;
+  text-decoration: none;
 }
 
 .header-nav:hover {
@@ -120,7 +122,6 @@ footer {
   float: right;
   color: rgba(0, 88, 116, 1);
 }
-
 
 .copyright {
   padding: 15px;
