@@ -13,36 +13,54 @@
       </div>
 
       <div class="header-right">
-        <a href="#" class="header-nav">about</a>
-        <a href="#" class="header-nav">works</a>
-        <a href="#" class="header-nav">contact</a>
+        <a href="#about" class="header-nav">About</a>
+        <a href="#works" class="header-nav">Works</a>
+        <a href="#contact" class="header-nav">Contact</a>
       </div>
     </div>
   </header>
 
   <main>
     <div class="container">
-      <div class="my-image">
-        <span>95</span>
-      </div>
-      <div class="my-profile">
-        <h1>tobari's page</h1>
-        <p>電気通信大学で情報数理を学んでいる学生のページです。</p>
-        <p>自己紹介だったり作品だったりを載っける予定です。</p>
-        <p class="alert">工事中</p>
+      <div class="introduction">
+        <div class="my-image">
+          <span>95</span>
+        </div>
+        <div class="my-profile">
+          <h1>tobari's page</h1>
+          <p>どこかの大学で情報数理と戯れている学生のページです。</p>
+          <p>自己紹介だったり作ったものだったりを載っける予定です。</p>
+        </div>
       </div>
       <div class="clear"></div>
+
+      <div id="about" class="content">
+        <h2>About</h2>
+        <p>競技プログラミングが好きです。たまにCodinGameなどに出没します。</p>
+      </div>
+
+      <div id="works" class="content">
+        <h2>Works</h2>
+        <a href="./lifegame.html" class="work">ライフゲーム</a>
+        <p class="work-descryption">Vue.jsを用いて実装したライフゲームです。</p>
+      </div>
+
+      <div id="contact" class="content">
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="https://github.com/tobari95">Github</a></li>
+          <li><a href="https://twitter.com/__tobari__">Twitter</a></li>
+        </ul>
+      </div>
     </div>
   </main>
 
   <footer>
     <div class="container">
       <div class="footer-left">
-        <ul>
-          <li class="footer-nav">about</li>
-          <li class="footer-nav">works</li>
-          <li class="footer-nav">contact</li>
-        </ul>
+        <a href="#about" class="footer-nav">About</a>
+        <a href="#works" class="footer-nav">Works</a>
+        <a href="#contact" class="footer-nav">Contact</a>
       </div>
       <div class="footer-right">
         <p class="copyright">Copyright © 2018 tobari All Rights Reserved.</p>
